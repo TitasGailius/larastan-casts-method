@@ -1,4 +1,4 @@
-![Larastan Casts Method Demo](./screenshots/carbon.png)
+![Larastan Casts Method Demo](./screenshots/demo.png)
 
 # Larastan Casts Method
 
