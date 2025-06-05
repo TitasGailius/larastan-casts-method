@@ -25,7 +25,7 @@ Include the extension **before** the Larastan extension.
 
 ```diff
 includes:
-+  - vendor/titasgailius/larastan-casts-method/extension.neon
++ - vendor/titasgailius/larastan-casts-method/extension.neon
   - vendor/larastan/larastan/extension.neon
 ```
 
