@@ -1,0 +1,5 @@
+services:
+  -
+    class: App\PHPStan\ModelPropertyExtension
+    tags:
+      - phpstan.broker.propertiesClassReflectionExtension

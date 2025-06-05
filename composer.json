@@ -1,0 +1,25 @@
+{
+    "name": "titasgailius/larastan-casts-method",
+    "description": "Larastan extension that automatically parses model's casts() method return type without the need of array shapes.",
+    "type": "library",
+    "require-dev": {
+        "larastan/larastan": "^3.4",
+        "headercat/phpstan-extension-ide-helper": "^2.1",
+        "phpstan/phpstan": "^2.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TitasGailius\\LarastanCastsMethod\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Titas Gailius",
+            "email": "titas.gailius@gmail.com"
+        }
+    ],
+    "scripts": {
+        "phpstan": "./vendor/bin/phpstan analyse"
+    }
+}
