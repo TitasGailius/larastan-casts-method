@@ -1,5 +1,5 @@
 services:
   -
-    class: App\PHPStan\ModelPropertyExtension
+    class: TitasGailius\LarastanCastsMethod\ModelCastsExtension
     tags:
       - phpstan.broker.propertiesClassReflectionExtension
