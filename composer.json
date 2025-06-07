@@ -1,0 +1,49 @@
+{
+    "name": "titasgailius/larastan-extended",
+    "description": "An opinionated Larastan extension. Automatically parse model's casts() method.",
+    "type": "library",
+    "require": {
+        "phpstan/phpstan": "^2.1"
+    },
+    "require-dev": {
+        "headercat/phpstan-extension-ide-helper": "^2.1",
+        "larastan/larastan": "^3.4",
+        "laravel/framework": "^11.44.2 || ^12.7.2",
+        "laravel/pint": "^1.22",
+        "orchestra/testbench-core": "^10.3",
+        "pestphp/pest": "^3.8",
+        "pestphp/pest-plugin-watch": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "TitasGailius\\LarastanExtended\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "tests/application/"
+        },
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Titas Gailius",
+            "email": "titas.gailius@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test:lint": "pint --test",
+        "test:types": "phpstan analyse --memory-limit=1G",
+        "test:unit": "pest",
+        "test": ["@test:lint", "@test:types", "@test:unit"]
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    }
+}

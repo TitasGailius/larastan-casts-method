@@ -1,0 +1,17 @@
+parametersSchema:
+  runModelCasts: bool()
+  skipModelCastsFor: listOf(string())
+
+parameters:
+  runModelCasts: true
+  skipModelCastsFor: []
+
+conditionalTags:
+  TitasGailius\LarastanExtended\Properties\ModelCastsExtension:
+    phpstan.broker.propertiesClassReflectionExtension: %runModelCasts%
+
+services:
+  -
+    class: TitasGailius\LarastanExtended\Properties\ModelCastsExtension
+    arguments:
+      ignoredModels: %skipModelCastsFor%
