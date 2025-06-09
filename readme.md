@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./screenshots/cover.png" alt="Larastan Extended Demo">
+    <img src="./screenshots/cover.jpeg" alt="Larastan Extended Demo">
 </p>
 
 # Larastan Extended
