@@ -43,12 +43,12 @@ Route::get('posts', function (Request $request) {
 ## Detect non-nullable relationships.
 
 ```diff
-Route::get('team', function (Request $request): team {
--  /** @var \App\Models\Team */
--  $team = $request->user()->team;
+Route::get('teams/{team}/owner', function (Team $team): team {
+-  /** @var \App\Models\User */
+-  $owner = $team->owner;
 -
--  return $team;
-+  return $request->user()->team;
+-  return $owner;
++  return $team->owner;
 });
 ```
 
